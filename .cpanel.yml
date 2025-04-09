@@ -1,4 +1,0 @@
-version: 2
-environment:
-  nodejs: 22
-  npm: 10

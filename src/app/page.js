@@ -1,9 +1,12 @@
-import React from "react";
+import { getAllPosts } from "@/lib/posts";
+import ListPosts from "@/components/blocks/list-post/ListPost";
 
-export default function Home() {
+export default async function HomePage() {
+  const posts = await getAllPosts();
+
   return (
-    <div>
-      <div>Home</div>
-    </div>
+    <>
+      <ListPosts posts={posts} />
+    </>
   );
 }
